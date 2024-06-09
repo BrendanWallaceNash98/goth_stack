@@ -11,7 +11,7 @@ install:
 	@npm install -D daisyui@latest
 
 build:
-	## tailwindcss -i view/css/input.css -o public/styles.css
+	tailwindcss -i view/css/app.css -o public/styles.css
 	@templ generate view
 	@go build -o bin/goth_stack main.go
 

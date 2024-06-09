@@ -1,5 +1,9 @@
 package home
 
-templ Index() {
+import "goth_stack/view/layout"
 
+templ Index() {
+    @layout.App(true) {
+    <div> hello from the home page </div>
+    }
 }
